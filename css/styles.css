@@ -16,11 +16,13 @@ body {
 
 /******INDEX.HTML******/
 
+/* Aspecto del Encabezado */
 .header {
     background-color: var(--color-primario);    /*(Llamado de Color Titulo)*/
     padding: 20px 40px;                         /*(Margenes Internos)*/
 }
 
+/* Aspecto del Nav */
 .nav {     
     gap: 15px;          /*(Espaciado entre Nav)*/
     margin-top: 25px;   /*(Margen Superior)*/
@@ -76,6 +78,7 @@ body {
     padding: 0;             /*(Margenes Internos)*/
 }
 
+/* Aspecto de la Lista */
 .news-list li {
     padding: 12px;          /*(Espaciado de la lista)*/ 
     font-size: 14px;        /*(Tamaño de Fuente)*/
@@ -104,31 +107,6 @@ body {
     margin-top: 0;                                   /*(Elimina Margen Superior)*/
     border-bottom: 2px solid var(--color-primario);  /*(Color y Grosor de Lineas separadoras)*/
     padding-bottom: 10px;                            /*(Espaciado de Lineas Separadoras)*/
-}
-
-/******DETALLES.HTML******/
-
-/* Aspecto de Recursos */
-.recursos-lista a {
-    color: var(--color-primario);       /*(Llamado a Color Titulo)*/
-    text-decoration: none;              /*(Elimina Subrayado)*/
-    font-weight: bold;                  /*(Grosor de Fuente)*/
-}
-
-/* Interactividad de Recursos */
-.recursos-lista a:hover {
-    text-decoration: underline;         /*(Subrayado de Fuente)*/
-    color: var(--color-hover);          /*(Llamado de Color Seleccion)*/
-}
-
-/* Aspecto de Pie de Pagina */
-.footer {
-    background-color: var(--color-primario);  /*(Llamado a Color Titulo)*/
-    text-align: center;                       /*(Alineacion de Texto)*/
-    padding: 15px;                            /*(Margenes Internos)*/
-    position: fixed;                          /*(El Pie de Pagina sigue la vista)*/
-    bottom: 0;                                /*(Baja completamente)*/
-    width: 100%;                              /*(Ocupa todo el ancho de pantalla)*/
 }
 
 /******PROYECTOS.HTML******/
@@ -238,6 +216,31 @@ body {
     margin-bottom: 20px;        /*(Margen Exterior inferior)*/
 }
 
+/******DETALLE.HTML******/
+
+/* Aspecto de Recursos */
+.recursos-lista a {
+    color: var(--color-primario);       /*(Llamado a Color Titulo)*/
+    text-decoration: none;              /*(Elimina Subrayado)*/
+    font-weight: bold;                  /*(Grosor de Fuente)*/
+}
+
+/* Interactividad de Recursos */
+.recursos-lista a:hover {
+    text-decoration: underline;         /*(Subrayado de Fuente)*/
+    color: var(--color-hover);          /*(Llamado de Color Seleccion)*/
+}
+
+/* Aspecto de Pie de Pagina */
+.footer {
+    background-color: var(--color-primario);  /*(Llamado a Color Titulo)*/
+    text-align: center;                       /*(Alineacion de Texto)*/
+    padding: 15px;                            /*(Margenes Internos)*/
+    position: fixed;                          /*(El Pie de Pagina sigue la vista)*/
+    bottom: 0;                                /*(Baja completamente)*/
+    width: 100%;                              /*(Ocupa todo el ancho de pantalla)*/
+}
+
 /******PERFIL.HTML******/
 
 /* Grid para la Estructura de los Perfiles */
@@ -248,7 +251,7 @@ body {
     margin-top: 20px;                        /*(Margen Superior)*/
 }
 
-/* Aspecto de los Perfiles */
+/* Aspecto de los Perfiles 1 */
 .perfil-card {
     background-color: var(--color-cajas);     /*(Llamado a Color Cajas)*/
     border: 1px solid #ccc;                 /*(Grosor y Color de Borde de Cuadricula)*/
@@ -257,31 +260,30 @@ body {
     text-align: center;                       /*(Alineacion de Texto)*/
 }
 
-/* Aspecto de los Perfiles 2 */
-.perfil-img {
-    width: 150px;                   /*(Ancho de Marco de Foto)*/
-    height: 150px;                  /*(Alto de Marco de Foto)*/
-    border-radius: 50%;             /*(Hace el Marco Circular)*/
-    object-fit: cover;              /*(La Foto no se Deforma)*/
-    /* margin-bottom: 15px;             */
-    border: 4px solid var(--color-primario); /* Un borde con tu color principal */
+/* Aspecto de los Perfiles 2 (Marco) */
+.perfil-img {   
+    width: 150px;                                /*(Ancho de Marco de Foto)*/
+    height: 150px;                               /*(Alto de Marco de Foto)*/
+    border-radius: 50%;                          /*(Hace el Marco Circular)*/
+    object-fit: cover;                           /*(La Foto no se Deforma)*/
+    margin-bottom: 15px;                         /*(Margen inferior del Circulo)*/
+    border: 4px solid var(--color-primario);     /*(Grosor del Circulo y Llamado a Color Titulo)*/
 }
 
-.perfil-info h3 {
-    color: var(--color-primario);
-    margin: 10px 0 5px 0;
-    font-size: 24px;
-}
-
-/* Etiqueta decorativa para el Rol (Alumno/Docente) */
+/* Aspecto de los Perfiles 3 (Etiqueta) */
 .rol-etiqueta {
-    display: inline-block;
-    background-color: var(--color-cajas);
-    color: #555;
-    padding: 5px 15px;
-    border-radius: 20px;
-    font-weight: bold;
-    font-size: 14px;
-    margin-bottom: 15px;
-    border: 1px solid #ddd;
+    display: inline-block;                      /*(No Ocupa todo el Ancho)*/
+    padding: 5px 15px;                          /*(Margenes Internos)*/
+    border-radius: 20px;                        /*(Redondeo de Cuadricula)*/
+    font-weight: bold;                          /*(Grosor de Fuente)*/
+    font-size: 14px;                            /*(Tamaño de Fuente)*/
+    margin-bottom: 15px;                        /*(Margen inferior de la Etiqueta)*/
+    border: 1px solid #ddd;                   /*(Grosor y Color de Borde de Etiqueta)*/
+}
+
+/* Aspecto de Descripcion */
+.perfil-info h3 {
+    color: var(--color-primario);           /*(Llamado a Color Titulo)*/
+    margin: 10px 0 5px 0;                   /*(Margenes Internos)*/
+    font-size: 24px;                        /*(Tamaño de Fuente)*/
 }
